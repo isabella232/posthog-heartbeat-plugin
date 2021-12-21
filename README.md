@@ -1,30 +1,8 @@
-# PostHog Plugin: Hello World Starter Kit
+# PostHog Heartbeat Plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-This is a basic exemplary PostHog plugin. It adds property `"greeting"` to every event, with a configurable value (default: `"Hello world!"`).
-
-Feel free to use it as a base for your own plugins!
-
-## How to develop
-
-All of the plugin's code is located in the `index.js` file, which is JavaScript ran inside of PostHog.
-To get yourself up to speed with this environment, we sincerely recommend checking out our [Plugins overview in PostHog Docs]([the Plugins Overview](https://posthog.com/docs/plugins/build/overview).
-For a crash course, read our [plugin building tutorial in PostHog Docs](https://posthog.com/docs/plugins/build/tutorial).
-
-## How to test
-
-To test the plugin, you'll need to install a few `npm` dependencies already specified in `package.json`:
-```bash
-npm install
-```
-
-This will get you the testing library Jest and some our test helpers.
-Then to run tests it's just:
-
-```bash
-npm test
-```
+This is a very simple plugin which sends one event to your project per minute. It can be used to ensure a continuous flow of events when monitoring whether ingestion is up and running. Works great in conjunction with [Posthog Ingestion Alert Plugin](https://github.com/PostHog/ingestion-alert-plugin)
 
 ## How to install
 

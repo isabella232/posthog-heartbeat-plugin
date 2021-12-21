@@ -1,5 +1,5 @@
 {
-    "name": "posthog-hello-world-plugin",
+    "name": "posthog-heartbeat-plugin",
     "private": true,
     "version": "1.0.0",
     "keywords": [
@@ -8,14 +8,8 @@
     ],
     "author": "PostHog <hey@posthog.com>",
     "license": "MIT",
-    "jest": {
-        "testEnvironment": "node"
-    },
-    "scripts": {
-        "test": "jest ."
-    },
+    "scripts": {},
     "devDependencies": {
-        "@posthog/plugin-scaffold": "0.10.0",
-        "jest": "^27.0.4"
+        "@posthog/plugin-scaffold": "0.10.0"
     }
 }

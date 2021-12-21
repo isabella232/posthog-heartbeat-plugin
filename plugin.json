@@ -1,15 +1,11 @@
 {
-    "name": "Hello World",
-    "url": "https://github.com/PostHog/posthog-hello-world-plugin",
-    "description": "Greet the world with every PostHog event. An example plugin.",
+    "name": "PostHog Heartbeat Plugin",
+    "url": "https://github.com/PostHog/posthog-heartbeat-plugin",
+    "description": "Creates one event per minute to validate ingestion pipeline",
     "main": "index.js",
     "config": [
         {
-            "key": "greeting",
-            "name": "What greeting would you like to use?",
-            "type": "string",
-            "default": "Hello world!",
-            "required": false
+            "markdown": "This plugin triggers an event called heartbeat every minute"
         }
     ]
 }
