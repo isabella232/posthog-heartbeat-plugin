@@ -1,6 +1,7 @@
 # PostHog Heartbeat Plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/PostHog/posthog-heartbeat-plugin/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/PostHog/posthog-heartbeat-plugin/actions/workflows/main.yml)
 
 This is a very simple plugin which sends one event to your project per minute. It can be used to ensure a continuous flow of events when monitoring whether ingestion is up and running. Works great in conjunction with [Posthog Ingestion Alert Plugin](https://github.com/PostHog/ingestion-alert-plugin)
 
