@@ -1,5 +1,8 @@
 name: CI
 
+env:
+  NODE_VERSION: '14.x'
+
 on:
   push:
     branches: [ main ]
