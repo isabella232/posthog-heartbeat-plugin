@@ -1,8 +1,5 @@
 name: CI
 
-env:
-  NODE_VERSION: '14.x'
-
 on:
   push:
     branches: [ main ]
@@ -16,6 +13,8 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
+        with:
+          node-version: '14'
       - name: Set up node 
         uses: actions/setup-node@v1
       - name: Install dependencies
