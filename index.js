@@ -1,11 +1,14 @@
-export async function runEveryMinute({ config }) {
+/* global posthog */
+/* eslint no-undef: "error" */
+
+export async function runEveryMinute() {
     await captureHeartbeat()
- }
- 
- export async function setupPlugin() {
-     await captureHeartbeat()
- }
- 
- async function captureHeartbeat() { 
-     await posthog.capture('heartbeat')
- }
+}
+
+export async function setupPlugin() {
+    await captureHeartbeat()
+}
+
+async function captureHeartbeat() {
+    await posthog.capture('heartbeat')
+}
